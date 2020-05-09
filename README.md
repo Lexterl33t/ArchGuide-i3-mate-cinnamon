@@ -218,10 +218,46 @@ FONT=eurlatgr
 <b>
 Si lorsque vous mettez nano /etc/vconsole.conf cela vous dis que "nano command not found" il faut simplement l'installer
 via 
+</b>
+
 ```
 pacman -S nano
 ```
-</b>
+
+### Configuration de la localisation
+
+Nous allons maintenant configurer votre emplacement géographique je suis en france donc je vais me mettre en Europe/Paris
+
+```
+nano /etc/locale.conf
+
+```
+
+Vous écrivez dedans
+
+```
+LANG=fr_FR.UT-8
+LC_COLLATE=C
+```
+
+ensuite
+```
+locale-gen
+```
+
+### Hostname
+
+Nous allons crée le nom de notre machine en créant le fichier <b>/etc/hostname</b>
+
+```
+nano /etc/hostname
+```
+
+Et puis vous écrivez simplement votre nom d'utilisateur comme ceci:
+
+<img width="460" height="300" src="https://imgur.com/bfmMQBv.jpg">
+
+
 
 
 ## Authors
