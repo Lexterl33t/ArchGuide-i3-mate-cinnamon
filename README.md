@@ -27,7 +27,7 @@ Une fois que vous êtes sur le terminal de l'iso arch on va simplement changer l
 loadkeys fr
 ```
 
-## Créations des partitions
+## Partitions
 
 Tout d'abord il va falloir crée plusieurs partitions
     - Boot
@@ -130,6 +130,14 @@ mount /dev/sda1 /mnt/boot
 mount /dev/sda4 /mnt/home
 
 ```
+
+## Configuration du mirroir
+
+Tout d'abord afin d'accèder aux mirror list voici le path
+`
+  /etc/pacman.d/mirrorlist
+
+`
 
 ## Authors
 
