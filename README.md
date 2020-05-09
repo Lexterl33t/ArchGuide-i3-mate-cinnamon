@@ -401,6 +401,59 @@ reboot
 
   <img width="500" height="600" src="https://imgur.com/2ZBB55O.jpg">
 
+  ## Outils de base afin que vous puissiez utiliser votre environnement
+
+  Afin que vous puissiez installer vos programme sur votre environnement
+  je vous conseil d'installer un terminal voici une liste de commande
+  pour installer des terminal
+
+  XFCE
+
+  ```
+  pacman -S xfce4-terminal
+  ```
+
+  DEEPIN
+
+  ```
+  pacman -S deepin-terminal
+  ```
+
+  XTERM
+
+  ```
+  pacman -S xterm
+  ```
+
+  # Cinnamon mise en place
+
+  Nous allons mettre à présent en place Cinnamon qui selon moi est le meilleur environnement je vais vous placer un screen
+  de mon environnement débian sur arch linux
+
+  <img width="700" heigt="400" src="https://imgur.com/mfSKf8C.jpg">
+
+  ## Installation de cinnamon
+
+  Même procédure
+
+  ```
+  pacman -S cinnamon-session
+  ```
+
+  éditer le fichier .xinitrc et remplacer exec i3 par
+
+  ```
+  exec cinnamon-session
+  ```
+
+  Puis sauvegarder et faites
+
+  ```
+  startx
+  ```
+
+  
+
 ## Authors
 
 * **Muham'RB** - *Initial work* - [MuhamRB](https://github.com/MuhamRb)
