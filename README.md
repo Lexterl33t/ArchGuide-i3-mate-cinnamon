@@ -359,7 +359,48 @@ reboot
   et vous ecrivez 1 3 4 5 comme ceci
 
   <img width="480" height="320" src="https://imgur.com/yNJ3q0C.jpg">
+
+
+  Ensuite nous allons crée le fichier .xinitrc
+
+  et écrire cela dedans
+
+  ```
+  nano .xinitrc
+  ```
+
+  Ensuite vous mettez dedans 
+
+  ```
+  exec i3
+  ```
   
+  Puis vous sauvegardez
+
+  Ensuite vous faites:
+  ```
+  startx
+  ```
+
+  Et si vous avez un "command not found"
+
+  installez xorg-xinit
+
+  ```
+  pacman -S xorg-{xinit,server,apps}
+  ```
+
+  puis 
+
+  ```
+  startx
+  ```
+
+  Et vous serez sur i3
+  comme ceci
+
+  <img width="500" height="600" src="https://imgur.com/2ZBB55O.jpg">
+
 ## Authors
 
 * **Muham'RB** - *Initial work* - [MuhamRB](https://github.com/MuhamRb)
