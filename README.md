@@ -258,6 +258,91 @@ Et puis vous écrivez simplement votre nom d'utilisateur comme ceci:
 <img width="460" height="300" src="https://imgur.com/bfmMQBv.jpg">
 
 
+### Configuration du fuseaux horraire
+
+Afin de configurer votre fuseau horraire vous avez simplement à faire cela
+
+```
+ln -sf /usr/share/zoneinfo/Europe/Paris /etc/localtime
+```
+
+Pour configurer l'heure faites simplement cela
+
+```
+hclock --systohc --utc
+```
+
+## Kernel
+
+### Génerer l'image du kernel
+
+Nous allons génerer l'image du kernel via 
+
+```
+mkinitcpio -p linux
+```
+
+Si vous avez "command not found" vous devez installer mkinitcpio
+
+```
+pacman -S mkinitcpio
+```
+
+Et si il ne trouve pas le kernel vous devez l'installer idem
+
+```
+pacman -S linux
+```
+
+<img widht="460" height="300" src="https://imgur.com/RwF3EEd.jpg">
+
+## Grub
+
+Nous mettons en place le grub
+
+```
+grub-install --no-floppy --recheck /dev/sda
+```
+
+```
+grub-mkconfig -o /boot/grub/grub.cfg
+```
+
+Si vous avez une erreur pas de panique cela marchera
+
+## Configuration de l'utilisateur root
+
+Nous allons définir un mot de passe root via la commande
+
+```
+passwd root
+```
+
+
+## Configuration gestionnaire reseau
+
+Nous allons installer networkmanager
+
+```
+pacman -S networkmanager
+```
+
+puis l'activer
+
+```
+systemctl enable NetworkManager
+```
+
+<img width="460" height="300" src="https://imgur.com/ky8s4G1.jpg">
+
+
+Nous avons à présent terminé l'installation de Arch linux voici les derniere commandes à effectuer
+
+```
+exit
+umount -R /mnt
+reboot
+```
 
 
 ## Authors
