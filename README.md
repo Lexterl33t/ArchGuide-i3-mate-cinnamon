@@ -100,7 +100,6 @@ Afin de crée une zone d'echange sur le périphérique nous allons utiliser
 
 ```
 mkswap /dev/sda2 
-
 ```
 pour crée une zone d'échange sur notre swap ainsi nous pouvons l'utiliser via
 
