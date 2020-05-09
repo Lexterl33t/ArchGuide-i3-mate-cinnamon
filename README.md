@@ -269,7 +269,7 @@ ln -sf /usr/share/zoneinfo/Europe/Paris /etc/localtime
 Pour configurer l'heure faites simplement cela
 
 ```
-hclock --systohc --utc
+hwclock --systohc --utc
 ```
 
 ## Kernel
