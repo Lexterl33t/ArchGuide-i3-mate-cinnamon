@@ -5,7 +5,8 @@
 # Guide d'installation ArchLinux UEFI/BIOS, et installation de l'environnement i3/Cinnamon/Mate
 
 Bonjour, aujourd'hui je vous propose mon guide afin d'installer Arch linux et les environnements de votre choix.
-Ce guide est accessible seulement à des utilisateurs de linux ayant beaucoup d'experience en bash
+Ce guide est accessible seulement à des utilisateurs de linux ayant beaucoup d'experience en bash. Pour le premier guide je ne 
+mettrais pas encore l'UEFI mais ça viendra je mettrais les commandes qui sont différentes pour l'UEFI et le partitionnement
 
 ## Lancement de l'installation
 
@@ -25,6 +26,17 @@ Une fois que vous êtes sur le terminal de l'iso arch on va simplement changer l
 ```bash
 loadkeys fr
 ```
+
+## Créations des partitions
+
+Tout d'abord il va falloir crée plusieurs partitions
+    - Boot
+    - Swap
+    - Root
+    - Home
+
+
+
 
 ## Authors
 
