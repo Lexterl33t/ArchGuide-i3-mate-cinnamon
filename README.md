@@ -43,8 +43,29 @@ fdisk -l
 
 <img width="460" height="300" src="https://imgur.com/lKr7u6m.jpg">
 
+Ensuite nous allons lancer cfdisk en dos pour partitionner nos disque via 
 
+```
+cfdisk /dev/sda
+```
 
+<img width="460" height="300" src="https://imgur.com/AIAzTrc.jpg">
+
+Voici à quoi ressemble le partitionnement des disque
+
+<img width="460" height="300" src="https://imgur.com/5qtvTxH.jpg">
+
+Tableau de partitionnement:
+
+```
+| Name | Type | | Size |
+| --- | --- | | --- |
+| /dev/sda1 | Boot | | 666MIB |
+| /dev/sda2 | Swap | | 5GIB |
+| /dev/sda3 | Root | | 15GIB |
+| /dev/sda4 | Home | | Reste du disque |
+
+```
 
 ## Authors
 
