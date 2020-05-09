@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="460" height="300" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fidealogeek.fr%2Finstallation-archlinux-gnome3-tuto%2F&psig=AOvVaw3364OGG5bobdtxC4nKv9x3&ust=1589110010418000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPCqiqfWpukCFQAAAAAdAAAAABAD">
+  <img width="460" height="300" src="https://angristan.fr/wp-content/uploads/2017/08/arch_linux-1038x576.png">
 </p>
 
 # Guide d'installation ArchLinux UEFI/BIOS, et installation de l'environnement i3/Cinnamon/Mate
