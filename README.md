@@ -214,15 +214,14 @@ FONT=eurlatgr
 ```
 
 <img width="460" height="300" src="https://imgur.com/W67lHy6.jpg">
-<b><font color="red">
+
+<b>
 Si lorsque vous mettez nano /etc/vconsole.conf cela vous dis que "nano command not found" il faut simplement l'installer
 via 
 ```
 pacman -S nano
 ```
-
-
-</font></b>
+</b>
 
 
 ## Authors
