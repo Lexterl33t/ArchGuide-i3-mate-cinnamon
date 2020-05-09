@@ -35,6 +35,14 @@ Tout d'abord il va falloir crée plusieurs partitions
     - Root
     - Home
 
+Nous allons checker notre peripherique via la commande
+
+```
+fdisk -l
+```
+
+<img width="460" height="300" src="https://imgur.com/lKr7u6m">
+
 
 
 
