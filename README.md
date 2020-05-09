@@ -236,7 +236,7 @@ nano /etc/locale.conf
 Vous écrivez dedans
 
 ```
-LANG=fr_FR.UT-8
+LANG=fr_FR.UTF-8
 LC_COLLATE=C
 ```
 
