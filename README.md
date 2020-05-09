@@ -160,6 +160,66 @@ puis vous enlever le diez juste devant Server comme ceci:
 Et pour en finir avec les mirroirs vous faites <b>CTRL+X</b> puis <b>Y</b>
 
 
+## Installation de la base
+
+Nous allons maintenant installer la base de arch via pacstrap dans le dossier /mnt
+
+```
+pacstrap /mnt base base-devel pacman-contrib
+```
+
+Puis nous allons installer des outils de base de arch tel que alsa ou zip unzip etc
+
+```
+pacstrap /mnt zip unzip p7zip vim mc alsa-utils syslog-ng mtools dosfstools lsb-release ntfs-3g exfat-utils bash-completion
+```
+
+## Générer le fichier /etc/fstab
+
+Nous allons devoir générer le fichier <b>/etc/fstab</b> afin de lister les partitions
+
+```
+genfstab -U -p /mnt >> /mnt/etc/fstub
+```
+
+## Installation de grub
+
+Nous allons installer grub et os-prober qui permet à deux OS de cohéxister
+
+```
+pacstrap /mnt os-prober grub
+```
+
+## Passage en archroot
+
+Nous allons devoir passer en archchroot afin de rentrer dans l'os
+
+```
+arch-chroot /mnt
+```
+
+### Configuration du clavier
+
+Nous allons éditer le fichier <b>/etc/vconsole.conf</b> afin de lui dire que l'on veut mettre notre clavier en Fr
+
+```
+nano /etc/vconsole.conf
+```
+
+Dedans vous écrivez:
+
+```
+KEYMAP=fr-latin9
+FONT=eurlatgr
+```
+
+<b><font color="red">
+Si lorsque vous mettez nano /etc/vconsole.conf cela vous dis que "nano command not found" il faut simplement l'installer
+via 
+```
+pacman -S nano
+```
+</font></b>
 
 
 ## Authors
