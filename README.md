@@ -179,7 +179,7 @@ pacstrap /mnt zip unzip p7zip vim mc alsa-utils syslog-ng mtools dosfstools lsb-
 Nous allons devoir générer le fichier <b>/etc/fstab</b> afin de lister les partitions
 
 ```
-genfstab -U -p /mnt >> /mnt/etc/fstub
+genfstab -U -p /mnt >> /mnt/etc/fstab
 ```
 
 ## Installation de grub
