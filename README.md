@@ -37,13 +37,15 @@ Tout d'abord il va falloir crée plusieurs partitions
 
 Nous allons checker notre peripherique via la commande
 
+### Lister les périphériques
 ```
 fdisk -l
 ```
 
 <img width="460" height="300" src="https://imgur.com/lKr7u6m.jpg">
 
-Ensuite nous allons lancer cfdisk en dos pour partitionner nos disque via 
+### Creation des partitions
+Ensuite nous allons lancer cfdisk en dos pour partitionner notre disque via 
 
 ```
 cfdisk /dev/sda
@@ -51,7 +53,7 @@ cfdisk /dev/sda
 
 <img width="460" height="300" src="https://imgur.com/AIAzTrc.jpg">
 
-Voici à quoi ressemble le partitionnement des disque
+Voici à quoi ressemble le partitionnement du disque
 
 <img width="460" height="300" src="https://imgur.com/5qtvTxH.jpg">
 
@@ -91,6 +93,44 @@ Tableau de partitionnement:
   </tr>
   
 </table>
+
+### Creation d'une zone d'echange
+
+Afin de crée une zone d'echange sur le périphérique nous allons utiliser
+
+```
+mkswap /dev/sda2 
+
+```
+pour crée une zone d'échange sur notre swap ainsi nous pouvons l'utiliser via
+
+```
+swapon /dev/sda2
+```
+
+### Formate des partitions
+
+Nous allons formater les partitions root, boot, home
+
+```
+mkfs.ext4 /dev/sda1
+mkfs.ext4 /dev/sda3
+mkfs.ext4 /dev/sda4
+```
+<img width="460" height="300" src="https://imgur.com/KqeEYJm.jpg">
+
+### Montage de nos partitions
+
+Nous allons maintenant monter nos partitions root, home, boot afin de crée nos dossier systeme boot et home et root donc la racine
+
+```
+mount /dev/sda3 /mnt
+mkdir /mnt/home
+mkdir /mnt/boot
+mount /dev/sda1 /mnt/boot
+mount /dev/sda4 /mnt/home
+
+```
 
 ## Authors
 
