@@ -345,6 +345,21 @@ reboot
 ```
 
 
+
+# Environnement de I3
+
+## Installation de i3
+
+  Pour installer i3 nous allons simplement faire
+  
+  ```
+  pacman -S i3
+  ```
+
+  et vous ecrivez 1 3 4 5 comme ceci
+
+  <img width="480" height="320" src="https://imgur.com/yNJ3q0C.jpg">
+  
 ## Authors
 
 * **Muham'RB** - *Initial work* - [MuhamRB](https://github.com/MuhamRb)
