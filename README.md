@@ -57,15 +57,6 @@ Voici à quoi ressemble le partitionnement des disque
 
 Tableau de partitionnement:
 
-/***
-| Name | Type | | Size |
-| --- | --- | | --- |
-| /dev/sda1 | Boot | | 666MIB |
-| /dev/sda2 | Swap | | 5GIB |
-| /dev/sda3 | Root | | 15GIB |
-| /dev/sda4 | Home | | Reste du disque |
-
-/***
 
 <table class="tg">
   <tr>
