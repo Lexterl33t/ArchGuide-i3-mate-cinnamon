@@ -69,20 +69,31 @@ Tableau de partitionnement:
 
 <table class="tg">
   <tr>
-    <th class="tg-yw4l"><b>Animals</b></th>
-    <th class="tg-yw4l"><b>Sports</b></th>
-    <th class="tg-yw4l"><b>Fruits</b></th>
+    <th class="tg-yw4l"><b>Name</b></th>
+    <th class="tg-yw4l"><b>Type</b></th>
+    <th class="tg-yw4l"><b>Size</b></th>
   </tr>
   <tr>
-    <td class="tg-yw4l">Cat</td>
-    <td class="tg-yw4l">Soccer</td>
-    <td class="tg-yw4l">Apple</td>
+    <td class="tg-yw4l">/dev/sda1</td>
+    <td class="tg-yw4l">Boot</td>
+    <td class="tg-yw4l">666MIB</td>
   </tr>
   <tr>
-    <td class="tg-yw4l">Dog</td>
-    <td class="tg-yw4l">Basketball</td>
-    <td class="tg-yw4l">Orange</td>
+    <td class="tg-yw4l">/dev/sda2</td>
+    <td class="tg-yw4l">Swap</td>
+    <td class="tg-yw4l">5G</td>
   </tr>
+  <tr>
+    <td class="tg-yw4l">/dev/sda3</td>
+    <td class="tg-yw4l">Root</td>
+    <td class="tg-yw4l">15GIB</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">/dev/sda4</td>
+    <td class="tg-yw4l">Home</td>
+    <td class="tg-yw4l">Reste</td>
+  </tr>
+  
 </table>
 
 ## Authors
