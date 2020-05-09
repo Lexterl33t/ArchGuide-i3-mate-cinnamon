@@ -135,6 +135,32 @@ mount /dev/sda4 /mnt/home
 
 Tout d'abord afin d'accèder aux mirror list voici le path <b>/etc/pacman.d/mirrorlist</b>
 
+Nous allons éditer le fichier de configuration
+
+```
+nano /etc/pacman.d/mirrorlist
+```
+
+par défaults tout les mirrors sont séléctionné
+
+<img width="460" height="300" src="https://imgur.com/3wAKPBp.jpg">
+
+Nous allons utiliser le mirroir labrusse car il est rapide 
+
+Pour ce faire vous allez devoirs faire les manipulation suivantes afin de désactiver tout les mirroirs
+
+
+Vous allez appuier sur <b>ALT+R</b> ensuite dans l'input vous écrivez <b>Server</b> puis vous faites <b>ENTRER</b>
+Ensuite tout les serveurs seront désactiver afin d'activer celui qui nous intéresse nous allons faire <b>CTRL+W</b>,
+dans l'input vous écrivez <b>labrusse</b> et vous faites <b>ENTRER</b>,
+puis vous enlever le diez juste devant Server comme ceci:
+
+<img width="460" height="300" src="https://imgur.com/QiluJxk.jpg">
+
+Et pour en finir avec les mirroirs vous faites <b>CTRL+X</b> puis <b>Y</b>
+
+
+
 
 ## Authors
 
