@@ -133,11 +133,8 @@ mount /dev/sda4 /mnt/home
 
 ## Configuration du mirroir
 
-Tout d'abord afin d'accèder aux mirror list voici le path
-`
-  /etc/pacman.d/mirrorlist
+Tout d'abord afin d'accèder aux mirror list voici le path <b>/etc/pacman.d/mirrorlist</b>
 
-`
 
 ## Authors
 
