@@ -70,7 +70,7 @@ Tableau de partitionnement:
   <tr>
     <td class="tg-yw4l">/dev/sda1</td>
     <td class="tg-yw4l">Boot</td>
-    <td class="tg-yw4l">666MIB</td>
+    <td class="tg-yw4l">512MIB</td>
     <td class="tg-yw4l">*</td>
   </tr>
   <tr>
